@@ -19,23 +19,13 @@ const initialState = {
 };
 
 const Pokedex = () => {
-  // const [name, setName] = useState([]);
-  // const [height, setHeight] = useState([]);
-  // const [weight, setWeight] = useState([]);
-  // const [base, setBase] = useState([]);
-  // const [type, setType] = useState([]);
-
   const [search, setSearch] = useState("pikachu");
   const [pokemon, setPokemon] = useState(initialState);
   const [loading, setLoading] = useState(true);
 
-  // const [types, setTypes] = useState([]);
-  // const [photo, setPhoto] = useState[[]];
-
   const change = (event) => {
     const { value } = event.target;
     setSearch(value.toLowerCase());
-    // console.log(search);
   };
 
   const hgmToLbs = (hectograms) => {
