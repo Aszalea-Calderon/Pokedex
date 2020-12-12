@@ -9,7 +9,7 @@ const RandomGenerator = (props) => {
   return (
     <div>
       <div className="power-button"></div>
-      <button className="green-box" onClick={generateRandom}>
+      <button className="random-button" onClick={generateRandom}>
         Random Pokemon
       </button>
     </div>
